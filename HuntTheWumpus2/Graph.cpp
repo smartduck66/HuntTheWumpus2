@@ -3,6 +3,7 @@
 
 #include "Graph.h"
 #include<map>
+#include <fstream>
 
 namespace Graph_lib {
 

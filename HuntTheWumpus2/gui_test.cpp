@@ -6,10 +6,13 @@
 // Caractères spéciaux : [ ]   '\n'   {  }   ||   ~   _     @
 
 #include <iostream>
+#include <iomanip>			// Poue utiliser put_time
 #include <sstream>
 #include <chrono>
+#include <ctime>
+#include <fstream>
 #include <thread>
-#include "Graph.h"        // get access to our graphics library facilities
+#include "Graph.h"			// get access to our graphics library facilities
 #include "GUI.h"
 #include "Window.h"
 

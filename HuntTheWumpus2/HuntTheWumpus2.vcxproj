@@ -188,8 +188,8 @@
     <ClInclude Include="fltk.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="GUI.h" />
+    <ClInclude Include="MyHeader.h" />
     <ClInclude Include="Point.h" />
-    <ClInclude Include="std_lib_facilities.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

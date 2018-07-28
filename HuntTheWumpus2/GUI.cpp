@@ -1,7 +1,6 @@
 #include "GUI.h"
 #include "Window.h"
-//#include "std_lib_facilities.h"
-//#include <sstream>
+#include <sstream>
 
 using namespace Graph_lib;
 

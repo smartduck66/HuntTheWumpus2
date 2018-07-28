@@ -2,12 +2,14 @@
 #define WINDOW_GUARD 1
 
 #include "fltk.h"
-
-#include "std_lib_facilities.h"
-
 #include "Point.h"
-//#include "GUI.h"
+#include <cstring>
+#include <string>
+#include <iostream>
+#include <vector>
 
+
+using namespace std;
 
 namespace Graph_lib {
 
