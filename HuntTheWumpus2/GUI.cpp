@@ -36,6 +36,16 @@ void In_box::put(int i)	// Rajout chapitre 16 afin de permettre de mettre une va
 
 }
 
+void In_box::put(const string& s)	// Rajout chapitre 19 afin de permettre de mettre une string dans la case
+{
+	Fl_Input& pi = reference_to<Fl_Input>(pw);
+	std::stringstream ss;
+	ss << s;
+	pi.value(ss.str().c_str());
+
+}
+
+
 void In_box::attach(Graph_lib::Window& win)
 {
 	pw = new Fl_Input(loc.x, loc.y, width, height, label.c_str());

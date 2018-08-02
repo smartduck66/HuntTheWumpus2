@@ -2,7 +2,7 @@
 // Il faudrait toujours rajouter le test 'if (color().visibility())' pour chaque fonction rajoutée. Parfois, cela n'a pas été fait...
 
 #include "Graph.h"
-#include<map>
+#include <map>
 #include <fstream>
 
 namespace Graph_lib {
