@@ -6,7 +6,7 @@ MyHeader.h
 first own header
 
 Revised July 21, 2018: initial release
-Revised August 2, 2018: function prototypes added
+Revised August 3, 2018: function prototypes added
 
 */
 
@@ -62,6 +62,15 @@ inline void error(const string& s, const string& s2)
 // Définition des prototypes de fonctions écrites dans la 1ère version de HuntTheWumpus (corps présent dans HuntTheWumpus.cpp)
 namespace HuntTheWumpus_lib {
 
+	const int EVENT_WUMPUS = 1;
+	const int EVENT_PIT = 2;
+	const int EVENT_BAT = 3;
+	const int EVENT_EMPTY_ROOM = 4;
+
+	const int SHOOT_WUMPUS_KILLED = 1;
+	const int SHOOT_WUMPUS_WAKEUP = 2;
+	const int SHOOT_NOEFFECT = 3;
+	
 	int nb_aleatoire(const int min, const int max);
 	void tunnels(const int room, const int nb_rooms_maze, multimap<int, int>&current_maze);
 	bool is_wumpus_here(const int room, const int wumpus_room);
@@ -69,9 +78,9 @@ namespace HuntTheWumpus_lib {
 	bool is_bat_here(const int room, const vector<int>& bat_rooms);
 	void tunnels_in_room(const int room, vector<int>& tunnels, const multimap<int, int>&current_maze);
 	bool is_new_room_valid(const int room, const vector<int>& tunnels);
-	tuple<bool, string> hazard(int room, const int wumpus_room, const vector<int>& pit_rooms, const vector<int>& bat_rooms, int& player_room, const int nb_rooms_maze);
+	const int hazard(int room, const int wumpus_room, const vector<int>& pit_rooms, const vector<int>& bat_rooms, int& player_room, const int nb_rooms_maze);
 	int wumpus_move(const int w_room, const multimap<int, int>&current_maze);
-	tuple<bool, bool, string> shoot(const int room, const vector<int>& tunnels, int& wumpus_room, const multimap<int, int>&current_maze);
+	const int shoot(const int room, const vector<int>& tunnels, int& wumpus_room, const multimap<int, int>&current_maze);
 
 }
 // *************************************************************************************************************************************************************************
