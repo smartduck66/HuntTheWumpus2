@@ -5,6 +5,7 @@
 // Commit en cours : 03/08/2018 
 // Caractères spéciaux : [ ]   '\n'   {  }   ||   ~   _     @
 // NOTE : on a tenté de conserver la structure de la version 1 autant que faire se peut. HuntTheWumpus.cpp contient les fonctions Helper du jeu initial.
+//
 
 #include <iostream>
 #include <thread>
